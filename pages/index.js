@@ -4,10 +4,10 @@ export default function Home() {
     return (
         <div className='sidepanels'>
             <Head>
-                <title>Tarmo Urrio - programmer student</title>
+                <title>Tarmo Urrio - software engineering student</title>
                 <meta
                     name='description'
-                    content='Tarmo Urrio is a software development student, who aims to be better at coding and is eager to learn more'
+                    content='Tarmo Urrio is a software engineering student, who aims to be better at coding and is eager to learn more'
                 />
                 <link rel='icon' type='image/png' href='/favicon.png'/>
                 <meta name='googlebot' content='index' />
@@ -15,6 +15,20 @@ export default function Home() {
                 <meta
                     name='viewport'
                     content='width=device-width, initial-scale=1, user-scalable=no'
+                />
+                <script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=UA-154665063-1"
+                />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'UA-154665063-1');
+                            `,
+                    }}
                 />
             </Head>
 
@@ -100,10 +114,10 @@ export default function Home() {
                                             >
                                                 Code
                                             </a>
-                                            <span className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'>
-                        {" "}
-                                                <a href='https://www.youtube.com/watch?v=CJuKJCPSMt4'>Video</a>
-                      </span>
+                                            <a className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100' href='https://www.youtube.com/watch?v=CJuKJCPSMt4'>
+
+                                                Video
+                      </a>
                                         </div>
                                     </div>
                                 </div>
@@ -143,10 +157,12 @@ export default function Home() {
                                             >
                                                 Code
                                             </a>
-                                            <span className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'>
-                        {" "}
-                                                <a href='https://www.youtube.com/watch?v=CJuKJCPSMt4'>Video</a>
-                      </span>
+                                            <a
+                                                href='https://www.youtube.com/watch?v=CJuKJCPSMt4'
+                                                className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'
+                                            >
+                                                Video
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +171,7 @@ export default function Home() {
                         <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
                             <div>
                                 <img
-                                    src='teema-mock.png'
+                                    src='teema-mock.PNG'
                                     alt='wimmaforum frontpage'
                                     className='object-cover object-center rounded-lg shadow-md'
                                 />
@@ -184,10 +200,12 @@ export default function Home() {
                                             >
                                                 Code
                                             </a>
-                                            <span className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'>
-                        {" "}
-                                                <a href='http://team-e-2021.pages.labranet.jamk.fi/site/'>Video</a>
-                      </span>
+                                            <a
+                                                href='http://team-e-2021.pages.labranet.jamk.fi/site/'
+                                                className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'
+                                            >
+                                                Video
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -256,10 +274,12 @@ export default function Home() {
                                             >
                                                 Code
                                             </a>
-                                            <span className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'>
-                        {" "}
-                                                <a href='https://simmer.io/@Tarzzi/jumpcat'>Demo</a>
-                      </span>
+                                        <a
+                                            href='https://simmer.io/@Tarzzi/jumpcat'
+                                            className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'
+                                        >
+                                            Demo
+                                        </a>
                                         </div>
                                     </div>
                                 </div>
