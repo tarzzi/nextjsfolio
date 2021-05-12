@@ -63,6 +63,7 @@ export default function Home() {
                     <div className='text-center'>
                         <img
                             src='person-circle-outline.svg'
+                            alt='person outline'
                             className='mx-auto w-12 lg:w-12 md:w-10 sm:w-8'
                         />
                         <h1 className='text-4xl lg:text-4xl md:text-3xl sm:text-3xl my-3'>
@@ -346,7 +347,7 @@ export default function Home() {
                                 href='mailto:&#116;&#97;&#114;&#109;&#111;&#64;&#117;&#114;&#114;&#105;&#111;&#46;&#102;&#105;'
                                 className='p-3 flex w-full justify-center items-center'
                             >
-                                <img src='/mail-outline.svg' className='w-8 mr-2' />
+                                <img src='/mail-outline.svg' alt='mail icon' className='w-8 mr-2' />
                                 <p>
                                     &#116;&#97;&#114;&#109;&#111;&#64;&#117;&#114;&#114;&#105;&#111;&#46;&#102;&#105;
                                 </p>
@@ -358,14 +359,14 @@ export default function Home() {
                                 href='https://github.com/tarzzi'
                                 className='p-3 flex w-full justify-center items-center rounded-xl hover:text-black hover:bg-gray-300 transition duration-200'
                             >
-                                <img src='/logo-github.svg' className='w-8 mr-2' />
+                                <img src='/logo-github.svg' alt='github logo' className='w-8 mr-2' />
                                 <p>Github - Personal</p>
                             </a>
                             <a
                                 href='https://gitlab.labranet.jamk.fi/N4378'
                                 className='p-3 flex w-full justify-center items-center rounded-xl hover:text-black hover:bg-gray-200 transition duration-200'
                             >
-                                <img src='/logo-gitlab.svg' className='w-8 mr-2' />
+                                <img src='/logo-gitlab.svg' alt='gitlab logo' className='w-8 mr-2' />
                                 <p>Gitlab - School</p>
                             </a>
                         </div>
@@ -378,7 +379,7 @@ export default function Home() {
                     <div className='pt-1 font-light'>
                         🍪 Cookies from Google analytics
                     </div>
-                    <div className='pt-1 font-light'>Background from <a href='https://www.heropatterns.com/' target='_blank' className='hover:bg-gray-400'>Heropatterns</a></div>
+                    <div className='pt-1 font-light'>Background from <a href='https://www.heropatterns.com/' rel="noopener" target='_blank' className='hover:bg-gray-400'>Heropatterns</a></div>
                 </div>
             </footer>
 
