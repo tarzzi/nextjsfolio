@@ -36,6 +36,7 @@ export default function Home() {
                 <div className='intro mb-20 lg:mb-44 md:mb-10 sm:mb-10 pt-16 '>
                     <img
                         src='profile.jpg'
+                        alt='tarmo urrio'
                         className='mx-auto mb-4 w-8/12 lg:w-4/12 md:w-6/12 sm:w-8/12 rounded-full shadow-lg'
                     />
 
@@ -50,6 +51,7 @@ export default function Home() {
                     <a href='#about'>
                         <img
                             src='chevron-down-outline.svg'
+                            alt='arrow down'
                             className='mx-auto my-16 w-12 lg:w-12 md:w-10 sm:w-8 animate-bounce opacity-60 hover:opacity-100 transition duration-100'
                         />
                     </a>
@@ -68,8 +70,8 @@ export default function Home() {
                         </h1>
                         <p className='text-xl lg:text-2xl md:text-2xl sm:text-2xl'>
                             From Jyväskylä, Finland <br />
-                            Second year software development student at{" "}
-                            <a href='https://www.jamk.fi'>JAMK</a>
+                            Third year software development student at{" "}
+                            <a href='https://www.jamk.fi' className='hover:text-blue-700'>JAMK</a>
                             <br />
                         </p>
                         <p className='mt-5 text-xl lg:text-2xl md:text-2xl sm:text-2xl'>
@@ -104,7 +106,7 @@ export default function Home() {
 
                                         <div className='mt-2'>
                       <span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
-                        Js
+                        JavaScript
                       </span>
                                             <span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
                         Leaflet
@@ -232,7 +234,7 @@ export default function Home() {
                                         </h4>
                                         <div className='mt-2'>
                       <span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
-                        NextJS
+                        Next.js
                       </span>
                       <span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
                         Tailwind
@@ -266,8 +268,10 @@ export default function Home() {
                                         </h4>
 
                                         <div className='mt-2'>
-                      <span className='bg-gray-300 rounded-full px-3 py-0.5 font-semibold'>
+                      <span className='bg-gray-300 rounded-full mr-2 px-3  py-0.5 font-semibold'>
                         C#
+                      </span><span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
+                        .NET framework
                       </span>
                                         </div>
                                         <div className='mt-4'>A pet store desktop-app. Final project for user interface programming-course.</div>
