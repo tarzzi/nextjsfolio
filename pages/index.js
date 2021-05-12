@@ -4,11 +4,6 @@ export default function Home() {
     return (
         <div className='sidepanels'>
             <Head>
-                <title>Tarmo Urrio - software engineering student</title>
-                <meta
-                    name='description'
-                    content='Tarmo Urrio is a software engineering student, who aims to be better at coding and is eager to learn more'
-                />
                 <link rel='icon' type='image/png' href='/favicon.png'/>
                 <meta name='googlebot' content='index' />
                 <meta charSet='utf-8' />
@@ -16,6 +11,22 @@ export default function Home() {
                     name='viewport'
                     content='width=device-width, initial-scale=1, user-scalable=no'
                 />
+                <title>Tarmo Urrio - software engineering student</title>
+                <meta name="title" content="Tarmo Urrio - software engineering student" />
+                <meta name="description" content="Tarmo Urrio's programmer portfolio" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://urrio.fi/" />
+                <meta property="og:title" content="Tarmo Urrio - software engineering student" />
+                <meta property="og:description" content="Tarmo Urrio's programmer portfolio" />
+                <meta property="og:image" content="https://urrio.fi/profile.jpg" />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://urrio.fi/" />
+                <meta property="twitter:title" content="Tarmo Urrio - software engineering student" />
+                <meta property="twitter:description" content="Tarmo Urrio's programmer portfolio" />
+                <meta property="twitter:image" content="https://urrio.fi/profile.jpg" />
+
                 <script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=UA-154665063-1"
