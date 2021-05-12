@@ -75,7 +75,7 @@ export default function Home() {
                         <p className='mt-5 text-xl lg:text-2xl md:text-2xl sm:text-2xl'>
                             I enjoy problem solving, innovations, gaming and life.
                             <br /> <br />
-                            <b>Currently at: 121/240 ECTS-credits.</b>
+                            <b>Currently at: 134/240 ECTS-credits.</b>
                             <br />
                         </p>
                     </div>
@@ -88,41 +88,7 @@ export default function Home() {
                         <h1 className='my-10 py-10 text-4xl'>My works</h1>
                     </div>
                     <div className='grid gap-y-16 gap-x-5 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1'>
-                        <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
-                            <div>
-                                <img
-                                    src='/ttstore-lg.jpg'
-                                    alt='pet store frontpage'
-                                    className=' object-cover object-center rounded-lg shadow-md'
-                                />
-                                <div className='relative px-6 -mt-16  '>
-                                    <div className='bg-white p-6 rounded-lg shadow-lg'>
-                                        <h4 className='mt-1 text-xl font-semibold uppercase leading-tight truncate'>
-                                            Pet store project
-                                        </h4>
 
-                                        <div className='mt-2'>
-                      <span className='bg-gray-300 rounded-full px-3 py-0.5 font-semibold'>
-                        C#
-                      </span>
-                                        </div>
-                                        <div className='mt-4'>A pet store desktop-app. Final project for user interface programming-course.</div>
-                                        <div className='mt-4'>
-                                            <a
-                                                className='border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100'
-                                                href='https://gitlab.labranet.jamk.fi/N4378/tarmocare'
-                                            >
-                                                Code
-                                            </a>
-                                            <a className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100' href='https://www.youtube.com/watch?v=CJuKJCPSMt4'>
-
-                                                Video
-                      </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
                             <div>
                                 <img
@@ -211,6 +177,47 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
+                            <div>
+                                <img
+                                    src='/veriarvo.png'
+                                    alt='veriarvot.info webpage'
+                                    className='object-cover object-center rounded-lg shadow-md'
+                                />
+                                <div className='relative px-4 -mt-16  '>
+                                    <div className='bg-white p-6 rounded-lg shadow-lg'>
+                                        <h4 className='mt-1 text-xl font-semibold uppercase leading-tight truncate'>
+                                            Bloodtest-results info page
+                                        </h4>
+                                        <div className='mt-2'>
+                      <span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
+                        Gatsby
+                      </span>
+                                            <span className='bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold'>
+                        Tailwind
+                      </span>
+                                        </div>
+                                        <div className='mt-4'>Made a site showing the refrence values of the most common blood-test results. Done as a side project, and also wanted to try Gatsby. </div>
+                                        <div className='mt-4'>
+                                            <a
+                                                className='border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100'
+                                                href='https://github.com/tarzzi/nextjsfolio'
+                                            >
+                                                Code
+                                            </a>
+                                            <a
+                                                href='https://veriarvot.info'
+                                                className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100'
+                                            >
+                                                Site
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
                             <div>
                                 <img
@@ -244,6 +251,43 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
+                            <div>
+                                <img
+                                    src='/ttstore-lg.jpg'
+                                    alt='pet store frontpage'
+                                    className=' object-cover object-center rounded-lg shadow-md'
+                                />
+                                <div className='relative px-6 -mt-16  '>
+                                    <div className='bg-white p-6 rounded-lg shadow-lg'>
+                                        <h4 className='mt-1 text-xl font-semibold uppercase leading-tight truncate'>
+                                            Pet store project
+                                        </h4>
+
+                                        <div className='mt-2'>
+                      <span className='bg-gray-300 rounded-full px-3 py-0.5 font-semibold'>
+                        C#
+                      </span>
+                                        </div>
+                                        <div className='mt-4'>A pet store desktop-app. Final project for user interface programming-course.</div>
+                                        <div className='mt-4'>
+                                            <a
+                                                className='border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100'
+                                                href='https://gitlab.labranet.jamk.fi/N4378/tarmocare'
+                                            >
+                                                Code
+                                            </a>
+                                            <a className='border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100' href='https://www.youtube.com/watch?v=CJuKJCPSMt4'>
+
+                                                Video
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='w-11/12 sm:w-11/12 grid justify-center items-center m-auto'>
                             <div>
                                 <img
