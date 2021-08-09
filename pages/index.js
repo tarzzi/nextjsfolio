@@ -141,10 +141,7 @@ const Home = ({works}) => {
             <h1 className="mt-10 mb-3 pt-10 text-2xl">Contact me</h1>
             <div className="w-8/12 mx-auto rounded-br-full rounded-tl-full text-xl text-gray-800">
               <div className="mb-5">
-                <p
-                    href="mailto:&#116;&#97;&#114;&#109;&#111;&#64;&#117;&#114;&#114;&#105;&#111;&#46;&#102;&#105;"
-                    className="p-3 flex w-full justify-center items-center"
-                >
+                <p className="p-3 flex w-full justify-center items-center">
                   <img
                       src="/mail-outline.svg"
                       alt="mail icon"
