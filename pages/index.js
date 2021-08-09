@@ -1,9 +1,16 @@
 import Head from "next/head";
-import Card from "../components/card";
-import data from "/data"
+import Card from '../components/card';
 
+export const getStaticProps = async () =>{
+  const res = await fetch('https://urrio.cloud/dataworks.json')
+  const data = await res.json()
 
-export default function Home() {
+  return{
+    props: { works: data }
+  }
+}
+
+const Home = ({works}) => {
   return (
       <div className="sidepanels">
         <Head>
@@ -121,201 +128,10 @@ export default function Home() {
               <h1 className="my-10 py-10 text-4xl">My works</h1>
             </div>
             <div className="grid gap-y-16 gap-x-5 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-              <Card imgSrc="/tcare.JPG" altName="front page of tarmocare">
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  Home-care app
-                </h4>
-                <div className="mt-2">
-								<span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									JavaScript
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									Leaflet
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									MySQL
-								</span>
-                </div>
-                <div className="mt-4">
-                  Web-app for logging home-care visits and client data. Final
-                  project for web programming courses.
-                </div>
-                <div className="mt-4">
-                  <a
-                      className="border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://gitlab.labranet.jamk.fi/N4378/tarmocare"
-                  >
-                    Code
-                  </a>
-                  <a
-                      href="https://www.youtube.com/watch?v=CJuKJCPSMt4"
-                      className="border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100"
-                  >
-                    Video
-                  </a>
-                </div>
-              </Card>
+              { works.map(work => (
+                  <Card key={work.id} {...work} />
+              ))}
 
-              <Card imgSrc="teema-mock.PNG" altName="wimmaforum frontpage">
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  Message board group project
-                </h4>
-
-                <div className="mt-2">
-								<span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									React
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									NodeJS
-								</span>
-                </div>
-                <div className="mt-4">
-                  Message board solution extending{" "}
-                  <a href="https://github.com/gothinkster/realworld">
-                    Thinksters
-                  </a>{" "}
-                  real world example, made as a group project at software
-                  production and testing courses.
-                </div>
-                <div className="mt-4">
-                  <a
-                      className="border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://gitlab.labranet.jamk.fi/team-e-2021"
-                  >
-                    Code
-                  </a>
-                  <a
-                      href="http://team-e-2021.pages.labranet.jamk.fi/site/"
-                      className="border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100"
-                  >
-                    Video
-                  </a>
-                </div>
-              </Card>
-
-              <Card imgSrc="/veriarvo.png" altName="veriarvot.info webpage">
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  Bloodtest-results info page
-                </h4>
-                <div className="mt-2">
-								<span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									Gatsby
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									Tailwind
-								</span>
-                </div>
-                <div className="mt-4">
-                  Made a site showing the refrence values of the most common
-                  blood-test results. Done as a side project, and also wanted to
-                  try Gatsby.{" "}
-                </div>
-                <div className="mt-4">
-                  <a
-                      className="border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://github.com/tarzzi/verikoeinfo"
-                  >
-                    Code
-                  </a>
-                  <a
-                      href="https://veriarvot.info"
-                      className="border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100"
-                  >
-                    Site
-                  </a>
-                </div>
-              </Card>
-
-              <Card imgSrc="/portfol.JPG" altName="this webpage">
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  Portfolio
-                </h4>
-                <div className="mt-2">
-								<span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									Next.js
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									Tailwind
-								</span>
-                </div>
-                <div className="mt-4">
-                  Reworked my portfolio site with NextJS and Tailwind CSS.{" "}
-                </div>
-                <div className="mt-4">
-                  <a
-                      className="border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://github.com/tarzzi/nextjsfolio"
-                  >
-                    Code
-                  </a>
-                </div>
-              </Card>
-
-              <Card imgSrc="/ttstore-lg.jpg" altName="pet store frontpage">
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  Pet store project
-                </h4>
-
-                <div className="mt-2">
-								<span className="bg-gray-300 rounded-full mr-2 px-3  py-0.5 font-semibold">
-									C#
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									.NET framework
-								</span>
-                </div>
-                <div className="mt-4">
-                  A pet store desktop-app. Final project for user interface
-                  programming-course.
-                </div>
-                <div className="mt-4">
-                  <a
-                      className="border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://gitlab.labranet.jamk.fi/N4378/tarmocare"
-                  >
-                    Code
-                  </a>
-                  <a
-                      className="border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://www.youtube.com/watch?v=CJuKJCPSMt4"
-                  >
-                    Video
-                  </a>
-                </div>
-              </Card>
-
-              <Card imgSrc="/jumpcat.png" altName="jump cat game">
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  Unity game project
-                </h4>
-
-                <div className="mt-2">
-								<span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									Unity
-								</span>
-                  <span className="bg-gray-300 rounded-full mr-2 px-3 py-0.5 font-semibold">
-									C#
-								</span>
-                </div>
-                <div className="mt-4">
-                  Challenging game about a famous cat and jumping. Made as game
-                  programming final project.{" "}
-                </div>
-                <div className="mt-4">
-                  <a
-                      className="border py-2 px-4 bg-gray-700 shadow text-white rounded-full hover:bg-gray-600 transition duration-100"
-                      href="https://gitlab.labranet.jamk.fi/N4378/jumpcat"
-                  >
-                    Code
-                  </a>
-                  <a
-                      href="https://simmer.io/@Tarzzi/jumpcat"
-                      className="border py-2 px-4 ml-4 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-100"
-                  >
-                    Demo
-                  </a>
-                </div>
-              </Card>
             </div>
           </div>
 
@@ -374,7 +190,7 @@ export default function Home() {
               🍪 Cookies from Google analytics
             </div>
             <div className="pt-1 font-light">
-              Background from{" "}
+              Background from {" "}
               <a
                   href="https://www.heropatterns.com/"
                   rel="noopener"
@@ -403,3 +219,7 @@ export default function Home() {
       </div>
   );
 }
+
+
+
+export default Home
