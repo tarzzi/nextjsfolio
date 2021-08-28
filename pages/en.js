@@ -3,7 +3,7 @@ import Card from '../components/card';
 import Lang from '../components/lang';
 
 export const getStaticProps = async () =>{
-  const res = await fetch('https://urrio.cloud/dataworksfi.json')
+  const res = await fetch('https://urrio.cloud/dataworks.json')
   const data = await res.json()
 
   return{
@@ -22,12 +22,12 @@ const Home = ({works}) => {
               name="viewport"
               content="width=device-width, initial-scale=1, user-scalable=no"
           />
-          <title>Tarmo Urrio - Porfolio</title>
+          <title>Tarmo Urrio - software engineering student</title>
           <meta
               name="title"
-              content="Tarmo Urrio - Porfolio"
+              content="Tarmo Urrio - software engineering student"
           />
-          <meta name="description" content="Tarmo Urrion portfolio" />
+          <meta name="description" content="Tarmo Urrio's programmer portfolio" />
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://urrio.fi/" />
@@ -80,10 +80,10 @@ const Home = ({works}) => {
 
             <div className="grid text-center">
               <div className="text-5xl lg:text-5xl md:text-3xl sm:text-5xl my-2">
-                Hei, olen <b>Tarmo Urrio</b>
+                Hi, I'm <b>Tarmo Urrio</b>
               </div>
               <div className="text-2xl lg:text-2xl sm:text-xl my-2">
-                Minusta tulee ohjelmistokehittäjä
+                I'm a to-be programmer
               </div>
             </div>
             <a href="#about">
@@ -104,20 +104,20 @@ const Home = ({works}) => {
                   className="mx-auto w-12 lg:w-12 md:w-10 sm:w-8"
               />
               <h1 className="text-4xl lg:text-4xl md:text-3xl sm:text-3xl my-3">
-                Minä
+                About me
               </h1>
               <p className="text-xl lg:text-2xl md:text-2xl sm:text-2xl">
-                Kotoisin Jyväskylästä <br />
-                Kolmannen vuoden ohjelmistokehityksen opiskelija {" "}
+                From Jyväskylä, Finland <br />
+                Third year software development student at{" "}
                 <a href="https://www.jamk.fi" className="hover:text-blue-700">
-                  JAMK:issa
+                  JAMK
                 </a>
                 <br />
               </p>
               <p className="mt-5 text-xl lg:text-2xl md:text-2xl sm:text-2xl">
-                Nautin ongelmanratkaisusta, innovaatioista, videopeleistä ja elämästä.
+                I enjoy problem solving, innovations, gaming and life.
                 <br /> <br />
-                <b>Opintopisteitä tällä hetkellä: 135/240 op.</b>
+                <b>Currently at: 135/240 ECTS-credits.</b>
                 <br />
               </p>
             </div>
@@ -127,7 +127,7 @@ const Home = ({works}) => {
 
           <div className="portfolio my-20">
             <div className="text-center">
-              <h1 className="my-10 py-10 text-4xl">Töitäni</h1>
+              <h1 className="my-10 py-10 text-4xl">My works</h1>
             </div>
             <div className="grid gap-y-16 gap-x-5 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
               { works.map(work => (
@@ -140,7 +140,7 @@ const Home = ({works}) => {
           <hr />
 
           <div className="text-center my-20 mb-80">
-            <h1 className="mt-10 mb-3 pt-10 text-2xl">Ota yhteyttä</h1>
+            <h1 className="mt-10 mb-3 pt-10 text-2xl">Contact me</h1>
             <div className="w-8/12 mx-auto rounded-br-full rounded-tl-full text-xl text-gray-800">
               <div className="mb-5">
                 <p className="p-3 flex w-full justify-center items-center">
@@ -154,7 +154,7 @@ const Home = ({works}) => {
                   </p>
                 </p>
               </div>
-              <h1 className="text-2xl mb-3">Lähdekoodit</h1>
+              <h1 className="text-2xl mb-3">Sources and projects</h1>
               <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-y-1 w-full lg:w-9/12 md:w-full sm:w-full mx-auto">
                 <a
                     href="https://github.com/tarzzi"
@@ -165,7 +165,7 @@ const Home = ({works}) => {
                       alt="github logo"
                       className="w-8 mr-2"
                   />
-                  <p>Github - Omat projektit</p>
+                  <p>Github - Personal</p>
                 </a>
                 <a
                     href="https://gitlab.labranet.jamk.fi/N4378"
@@ -176,7 +176,7 @@ const Home = ({works}) => {
                       alt="gitlab logo"
                       className="w-8 mr-2"
                   />
-                  <p>Gitlab - Koulun työt</p>
+                  <p>Gitlab - School</p>
                 </a>
               </div>
             </div>
@@ -186,10 +186,10 @@ const Home = ({works}) => {
         <footer className="mt-20">
           <div className="grid text-sm grid-cols-2 text-center bg-gradient-to-r from-white via-gray-300 to-white">
             <div className="pt-1 font-light">
-              🍪 Keksit Google analyticsistä
+              🍪 Cookies from Google analytics
             </div>
             <div className="pt-1 font-light">
-              Taustakuva by: {" "}
+              Background from {" "}
               <a
                   href="https://www.heropatterns.com/"
                   rel="noopener"
