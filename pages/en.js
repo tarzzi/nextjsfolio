@@ -83,7 +83,7 @@ const Home = ({works}) => {
                 Hi, I'm <b>Tarmo Urrio</b>
               </div>
               <div className="text-2xl lg:text-2xl sm:text-xl my-2">
-                I'm a to-be programmer
+                <strike>I'm a to-be</strike> I'm almost an software developer
               </div>
             </div>
             <a href="#about">
@@ -117,7 +117,7 @@ const Home = ({works}) => {
               <p className="mt-5 text-xl lg:text-2xl md:text-2xl sm:text-2xl">
                 I enjoy problem solving, innovations, gaming and life.
                 <br /> <br />
-                <b>Currently at: 135/240 ECTS-credits.</b>
+                <b>Currently at: 159/240 ECTS-credits.</b>
                 <br />
               </p>
             </div>

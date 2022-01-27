@@ -83,7 +83,7 @@ const Home = ({works}) => {
                 Hei, olen <b>Tarmo Urrio</b>
               </div>
               <div className="text-2xl lg:text-2xl sm:text-xl my-2">
-                Minusta tulee ohjelmistokehittäjä
+                <strike>Minusta tulee</strike> Olen jo melkein ohjelmistokehittäjä
               </div>
             </div>
             <a href="#about">
@@ -117,7 +117,7 @@ const Home = ({works}) => {
               <p className="mt-5 text-xl lg:text-2xl md:text-2xl sm:text-2xl">
                 Nautin ongelmanratkaisusta, innovaatioista, videopeleistä ja elämästä.
                 <br /> <br />
-                <b>Opintopisteitä tällä hetkellä: 135/240 op.</b>
+                <b>Opintopisteitä tällä hetkellä: 159/240 op.</b>
                 <br />
               </p>
             </div>
